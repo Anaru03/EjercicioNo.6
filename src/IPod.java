@@ -1,17 +1,46 @@
+import java.util.ArrayList;
+
 public class IPod implements IIpod_simulator{
+
+    private float volume;
+    private int index;
+    public ArrayList<Cancion> canciones = new ArrayList<>();
+    public ArrayList<Cancion> favorites = new ArrayList<>();
+
+    public boolean estado = false;
+    public boolean bloqueado = true;
+
+
+
+    /**
+     * Este metodo enciende / Apaga el dispositivo, recibe una variable booleana
+     * que tiene el estado actual del dispositivo
+     * @param actual_state el estado actual del dispositivo
+     * @return el estado futuro del dispositivo
+     */
     @Override
     public boolean SwitchONOFF(boolean actual_state) {
-        return false;
+        if(actual_state) {
+            this.estado = false;
+        }else{
+            this.estado = true;
+        }
+        return true;
     }
 
     @Override
     public boolean LockUnlockDevice(boolean actual_locked_state) {
-        return false;
+        if(actual_locked_state) {
+            this.bloqueado = false;
+        }else{
+            this.bloqueado = true;
+        }
+        return true;
     }
 
     @Override
     public float getVolume() {
-        return 0;
+        return volume;
     }
 
     @Override
@@ -21,22 +50,37 @@ public class IPod implements IIpod_simulator{
 
     @Override
     public int Prev(int actual_index) {
-        return 0;
+        if(actual_index < 1){
+            return -16;
+        }
+        else {
+            return actual_index - 1;
+        }
     }
 
     @Override
     public int Next(int actual_index) {
-        return 0;
+        if(actual_index == 49){
+            return -17;
+        }
+        else {
+            return actual_index + 1;
+        }
     }
 
     @Override
     public int getActualIndex() {
-        return 0;
+        return index;
     }
 
     @Override
     public void setActualIndex(int actual_index) throws Exception {
-
+        if(actual_index < 50){
+            this.index = actual_index;
+        }
+        else {
+            throw new Exception("¡Se alcanzazó el límite de las canciones");
+        }
     }
 
     /**
@@ -47,17 +91,32 @@ public class IPod implements IIpod_simulator{
      */
     @Override
     public void addToFavorite(ICancion _song) throws Exception {
-
+        if(favorites.size() < 10){
+            favorites.add((Cancion) _song);
+        }
+        else {
+            throw new Exception("¡Se lleno la lista de canciones favs!");
+        }
     }
 
     @Override
     public ICancion selectSpecificSong(int index) throws Exception {
-        return null;
+        if(index < canciones.size()){
+            return canciones.get(index);
+        }
+        else {
+            throw new Exception("¡El Index fuera de su rango!");
+        }
     }
 
     @Override
     public ICancion selectSpecificFavoriteSong(int index) throws Exception {
-        return null;
+        if(index < favorites.size()){
+            return favorites.get(index);
+        }
+        else {
+            throw new Exception("¡El Index fuera de su rango!");
+        }
     }
 
     /**
@@ -106,4 +165,6 @@ public class IPod implements IIpod_simulator{
     public void deleteSongFromTop10(int index) throws Exception {
 
     }
+
+
 }
