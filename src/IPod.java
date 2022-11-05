@@ -126,22 +126,74 @@ public class IPod implements IIpod_simulator{
      */
     @Override
     public ICancion[] getAllSongs() {
-        return new ICancion[0];
+        ICancion[] ipodsong = new ICancion[50];
+        for (int i=0; i<=canciones.size(); i++){
+            ipodsong[i] = canciones.get(i);
+        }
+        return ipodsong;
     }
 
     @Override
     public String getStatus(boolean _isON, boolean _isLocked, boolean _isPlaying, ICancion _actualSong) {
-        return null;
+        String state = "Estado";
+        if(_isON){
+            state = state + "Encendido";
+        }else {
+            state = state + "Apagado";
+            return state;
+        }
+
+        if(_isLocked){
+            state = state + "Bloqueado";
+        }else {
+            state = state + "Desbloaqueado";
+            return state;
+        }
+
+        if(_isPlaying){
+            state = state + "Reproduciendo " + _actualSong.getTitle() + " " + "del artista " + _actualSong.getArtist() + " " + "del album " + _actualSong.getAlbum() + " " + "con duración de " + _actualSong.getDuration();
+        }else {
+            state = state + "No se reproduce nada";
+        }
+        return state;
     }
 
+
+    /**
+     *
+     * @param index
+     * @return
+     */
     @Override
     public boolean isValidIndex(int index) {
-        return false;
+        if(index <= canciones.size()){
+            return true;
+        }else {
+            return false;
+        }
     }
 
+    /**
+     * Se agrega una cacncion para ser instanciada en el metodo y agregada a la lista
+     * @param _titulo
+     * @param _artista
+     * @param _album
+     * @param _duracion
+     * @param _id
+     * @throws Exception si el listado esta lleno
+     */
     @Override
     public void addSongToList(String _titulo, String _artista, String _album, String _duracion, int _id) throws Exception {
-
+        if(canciones.size()<50){
+            Cancion song = new Cancion();
+            song.setTitle(_titulo);
+            song.setArtist(_artista);
+            song.setAlbum(_album);
+            song.setDuration(_duracion);
+            song.setID(canciones.size());
+        }else {
+            throw new Exception("¡Se alacanzó el límite de canciones!");
+        }
     }
 
     /**
