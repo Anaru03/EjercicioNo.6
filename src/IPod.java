@@ -190,21 +190,26 @@ public class IPod implements IIpod_simulator{
             song.setArtist(_artista);
             song.setAlbum(_album);
             song.setDuration(_duracion);
-            song.setID(canciones.size());
+            song.setID(_id);
+            canciones.add(song);
         }else {
-            throw new Exception("¡Se alacanzó el límite de canciones!");
+            throw new Exception("¡Se alacanzó el límite máximo de canciones!");
         }
     }
 
     /**
      * Este metodo elimina una cancion de una posicion determinada
      *
-     * @param index
+     * @param index indice de las canciones determinada
      * @throws Exception Cuando el indice esta fuera de rango
      */
     @Override
     public void deleteSongFromList(int index) throws Exception {
-
+        if(index <= canciones.size()){
+            canciones.remove(index);
+        }else{
+            throw new Exception("¡El indice fuera de su rango!");
+        }
     }
 
     /**
