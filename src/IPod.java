@@ -220,8 +220,10 @@ public class IPod implements IIpod_simulator{
      */
     @Override
     public void deleteSongFromTop10(int index) throws Exception {
-
+        if(index <= favorites.size()){
+            favorites.remove(index);
+        }else{
+            throw new Exception("¡El indice fuera de su rango!");
+        }
     }
-
-
 }

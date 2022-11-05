@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="Se agrega los parámetros de métodos">
+    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="Modificaciones para eliminar canciones de las listas.">
       <change beforePath="$PROJECT_DIR$/src/IPod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667675779260</updated>
       <workItem from="1667675780675" duration="837000" />
-      <workItem from="1667680953126" duration="8578000" />
+      <workItem from="1667680953126" duration="9003000" />
     </task>
     <task id="LOCAL-00001" summary="Desarrollo de las clases con sus métodos">
       <created>1667676552846</created>
@@ -85,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667691083921</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modificaciones para eliminar canciones de las listas.">
+      <created>1667691688391</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667691688391</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +115,7 @@
     <MESSAGE value="Se generaron nuevas clases junto con la clase Main" />
     <MESSAGE value="Modificaciones en las caracteristicas de los metodos" />
     <MESSAGE value="Se agrega los parámetros de métodos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrega los parámetros de métodos" />
+    <MESSAGE value="Modificaciones para eliminar canciones de las listas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificaciones para eliminar canciones de las listas." />
   </component>
 </project>
