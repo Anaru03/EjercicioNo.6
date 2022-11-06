@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class UI {
+    static Scanner scanner = new Scanner(System.in);
 
     public static int initial(){
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +16,7 @@ public class UI {
         System.out.println("5. Preview Song");
         System.out.println("6. Subir volumen");
         System.out.println("7. Bajar volumen");
-        System.out.println("8. Ver una cacnción favorita");
+        System.out.println("8. Ver una canción favorita");
         System.out.println("9. Bloquar/Desbloquear");
         return scanner.nextInt();
     }
@@ -24,8 +25,17 @@ public class UI {
         System.out.println("No se encuentra esa opción");
     }
 
-    public static void mistaketwo(){
+    public static void mistakeTwo(){
         System.out.println("El dispositivo no se encuentra encendido");
+    }
+
+    public static void mistakeThree(){
+        System.out.println("El dispositivo esta en modo bloqueado o esta apagado");
+    }
+
+    public static int solicitudSongsFavs(){
+        System.out.println("Ingresar el index de la canción fav");
+        return scanner.nextInt();
     }
 
 }

@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class IPod implements IIpod_simulator{
 
-    private float volume;
-    private int index;
+    private float volume = 0;
+    private int index = 0;
     public ArrayList<Cancion> canciones = new ArrayList<>();
     public ArrayList<Cancion> favorites = new ArrayList<>();
 
@@ -54,6 +54,7 @@ public class IPod implements IIpod_simulator{
             return -16;
         }
         else {
+            this.index = actual_index -1;
             return actual_index - 1;
         }
     }
@@ -64,6 +65,7 @@ public class IPod implements IIpod_simulator{
             return -17;
         }
         else {
+            this.index = actual_index + 1;
             return actual_index + 1;
         }
     }
