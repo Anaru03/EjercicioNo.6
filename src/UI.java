@@ -20,5 +20,8 @@ public class UI {
         return scanner.nextInt();
     }
 
+    public static void mistake(){
+        System.out.println("No se encuentra esa opción");
+    }
 
 }
