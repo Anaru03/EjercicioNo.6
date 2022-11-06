@@ -8,6 +8,11 @@ public class Controller {
         int op = UI.initial();
         switch (op){
             case 1:
+                if(iPod.estado) {
+                    System.out.println(iPod.getStatus(iPod.estado, iPod.bloqueado, true, iPod.selectSpecificSong(iPod.getActualIndex())));
+                }else{
+                    UI.mistakeTwo();
+                }
                 break;
             case 2: iPod.SwitchONOFF(iPod.estado);
                 break;
@@ -56,6 +61,7 @@ public class Controller {
             case 8:
                 if(iPod.estado || !iPod.bloqueado) {
                     int ind = UI.solicitudSongsFavs();
+                    iPod.selectSpecificFavoriteSong(ind);
 
                 }else{
                     UI.mistakeThree();
@@ -72,5 +78,20 @@ public class Controller {
                 break;
         }
         menuPrincipal();
+    }
+
+    public static void AgregarCancion() throws Exception {
+        iPod.addSongToList("Dice", "NMIXX", "ENTWURF", "2:10", 1);
+        iPod.addSongToList("Tu falta de querer", "Mon Laferte", "Mon Laferte(Vol. 1)", "3:00", 2);
+        iPod.addSongToList("MOONLIGHT", "TWICE", "Formula of Love: O+T=>3", "3:10", 3);
+        iPod.addSongToList("ICON", "TWICE", "Formula of Love: O+T=>3", "2:10", 4);
+        iPod.addSongToList("CRUEL", "TWICE", "Formula of Love: O+T=>3", "2:46", 5);
+        iPod.addSongToList("REAL YOU", "TWICE", "Formula of Love: O+T=>3", "3:00", 6);
+        iPod.addSongToList("Run BTS", "BTS", "Proof", "3:10", 7);
+        iPod.addSongToList("Yet to Come", "BTS", "Proof", "2:16", 8);
+        iPod.addSongToList("Butter", "BTS", "Proof", "3:20", 9);
+        iPod.addSongToList("Life Goes On", "BTS", "Proof", "2:37", 10);
+
+
     }
 }

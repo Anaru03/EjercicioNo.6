@@ -114,6 +114,7 @@ public class IPod implements IIpod_simulator{
     @Override
     public ICancion selectSpecificFavoriteSong(int index) throws Exception {
         if(index < favorites.size()){
+            this.index = index;
             return favorites.get(index);
         }
         else {
@@ -137,7 +138,7 @@ public class IPod implements IIpod_simulator{
 
     @Override
     public String getStatus(boolean _isON, boolean _isLocked, boolean _isPlaying, ICancion _actualSong) {
-        String state = "Volumen: " + this.volume + "Estado: ";
+        String state = "Volumen: " + this.volume + " " + "Estado:" + " ";
         if(_isON){
             state = state + "Encendido";
         }else {
@@ -146,14 +147,13 @@ public class IPod implements IIpod_simulator{
         }
 
         if(_isLocked){
-            state = state + "Bloqueado";
+            state = state + " Bloqueado ";
         }else {
-            state = state + "Desbloaqueado";
-            return state;
+            state = state + " Desbloaqueado ";
         }
 
         if(_isPlaying){
-            state = state + "Reproduciendo " + _actualSong.getTitle() + " " + "del artista " + _actualSong.getArtist() + " " + "del album " + _actualSong.getAlbum() + " " + "con duración de " + _actualSong.getDuration();
+            state = state + "Reproduciendo: " + _actualSong.getTitle() + " " + "del artista " + _actualSong.getArtist() + " " + "del album " + _actualSong.getAlbum() + " " + "con duración de " + _actualSong.getDuration();
         }else {
             state = state + "No se reproduce nada";
         }
