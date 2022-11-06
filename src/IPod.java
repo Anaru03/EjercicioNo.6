@@ -167,8 +167,8 @@ public class IPod implements IIpod_simulator{
 
     /**
      *
-     * @param index
-     * @return
+     * @param index indice
+     * @return devuelve un valor falso o verdadero
      */
     @Override
     public boolean isValidIndex(int index) {
@@ -181,11 +181,11 @@ public class IPod implements IIpod_simulator{
 
     /**
      * Se agrega una cacncion para ser instanciada en el metodo y agregada a la lista
-     * @param _titulo
-     * @param _artista
-     * @param _album
-     * @param _duracion
-     * @param _id
+     * @param _titulo titulo de la cancion de la lista
+     * @param _artista artista de la cancion de la lista
+     * @param _album album de la cancion de la lista
+     * @param _duracion duracion de la cancion de la lista
+     * @param _id identificacion de la cancion de la lista
      * @throws Exception si el listado esta lleno
      */
     @Override

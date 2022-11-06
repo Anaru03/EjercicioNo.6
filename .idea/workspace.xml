@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="Modificación del JavaDoc en las clases">
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="últimas arreglos de los comentarios del JavaDoc">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IPod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -50,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667675779260</updated>
       <workItem from="1667675780675" duration="837000" />
-      <workItem from="1667680953126" duration="18728000" />
+      <workItem from="1667680953126" duration="19033000" />
     </task>
     <task id="LOCAL-00001" summary="Desarrollo de las clases con sus métodos">
       <created>1667676552846</created>
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667701294928</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="últimas arreglos de los comentarios del JavaDoc">
+      <created>1667701559448</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667701559448</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +181,8 @@
     <MESSAGE value="Configuraciones del menú mandando a llamar el UI" />
     <MESSAGE value="últimos arreglos de las acciones del menuPrincipal" />
     <MESSAGE value="Modificación del JavaDoc en las clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificación del JavaDoc en las clases" />
+    <MESSAGE value="últimas arreglos de los comentarios del JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="últimas arreglos de los comentarios del JavaDoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
