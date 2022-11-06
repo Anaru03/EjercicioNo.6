@@ -24,4 +24,8 @@ public class UI {
         System.out.println("No se encuentra esa opción");
     }
 
+    public static void mistaketwo(){
+        System.out.println("El dispositivo no se encuentra encendido");
+    }
+
 }

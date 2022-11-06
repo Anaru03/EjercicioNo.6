@@ -135,7 +135,7 @@ public class IPod implements IIpod_simulator{
 
     @Override
     public String getStatus(boolean _isON, boolean _isLocked, boolean _isPlaying, ICancion _actualSong) {
-        String state = "Estado";
+        String state = "Volumen: " + this.volume + "Estado: ";
         if(_isON){
             state = state + "Encendido";
         }else {
