@@ -60,7 +60,7 @@ public interface IIpod_simulator {
 
     /**
      * Establece el indice Actual
-     * @param actual_index
+     * @param actual_index indice actual
      * @exception Exception Cuando el indice esta fuera de rango
      */
     public void setActualIndex(int actual_index) throws Exception;

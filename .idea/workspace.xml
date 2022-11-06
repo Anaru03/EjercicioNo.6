@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="últimas arreglos de los comentarios del JavaDoc">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IPod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="Arreglos de comentarios faltantes del JavaDoc">
+      <change beforePath="$PROJECT_DIR$/src/IIpod_simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IIpod_simulator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667675779260</updated>
       <workItem from="1667675780675" duration="837000" />
-      <workItem from="1667680953126" duration="19033000" />
+      <workItem from="1667680953126" duration="19418000" />
     </task>
     <task id="LOCAL-00001" summary="Desarrollo de las clases con sus métodos">
       <created>1667676552846</created>
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667701559448</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Arreglos de comentarios faltantes del JavaDoc">
+      <created>1667702154104</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667702154104</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +187,8 @@
     <MESSAGE value="últimos arreglos de las acciones del menuPrincipal" />
     <MESSAGE value="Modificación del JavaDoc en las clases" />
     <MESSAGE value="últimas arreglos de los comentarios del JavaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="últimas arreglos de los comentarios del JavaDoc" />
+    <MESSAGE value="Arreglos de comentarios faltantes del JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglos de comentarios faltantes del JavaDoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
