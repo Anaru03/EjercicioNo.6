@@ -1,3 +1,7 @@
+/**
+ * @author Ruth de León
+ */
+
 import java.util.ArrayList;
 
 public class Controller {

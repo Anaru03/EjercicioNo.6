@@ -1,8 +1,16 @@
+/**
+ * @author Ruth de León
+ */
+
 import java.util.Scanner;
 
 public class UI {
     static Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Metodo generador del menu principal del programa
+     * @return devuelve un scanner tipo Int
+     */
     public static int initial(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bienvenido al ultra IPod");
@@ -21,18 +29,31 @@ public class UI {
         return scanner.nextInt();
     }
 
+    /**
+     * Metodo que genera error en el menuPrincipal
+     */
     public static void mistake(){
         System.out.println("No se encuentra esa opción");
     }
 
+    /**
+     * Metodo que genera error en el menuPrincipal
+     */
     public static void mistakeTwo(){
         System.out.println("El dispositivo no se encuentra encendido");
     }
 
+    /**
+     * Metodo que genera error en el menuPrincipal
+     */
     public static void mistakeThree(){
         System.out.println("El dispositivo esta en modo bloqueado o esta apagado");
     }
 
+    /**
+     * Metodo que solicita las canciones favoritas del indice
+     * @return devuelve un scanner tipo Int
+     */
     public static int solicitudSongsFavs(){
         System.out.println("Ingresar el index de la canción fav");
         return scanner.nextInt();
