@@ -4,10 +4,15 @@
 
 import java.util.ArrayList;
 
+
 public class Controller {
     ArrayList<Cancion> arrayList = new ArrayList<>();
     static IPod iPod = new IPod();
 
+    /**
+     * Metodo que genera el Menu Principal del programa
+     * @throws Exception cuando el indice este lleno
+     */
     public static void menuPrincipal() throws Exception {
         int op = UI.initial();
         switch (op){
@@ -84,6 +89,10 @@ public class Controller {
         menuPrincipal();
     }
 
+    /**
+     * Metodo que almacena las canciones del Ipod
+     * @throws Exception cuando este fuera del rango de canciones
+     */
     public static void AgregarCancion() throws Exception {
         iPod.addSongToList("Dice", "NMIXX", "ENTWURF", "2:10", 1);
         iPod.addSongToList("Tu falta de querer", "Mon Laferte", "Mon Laferte(Vol. 1)", "3:00", 2);
@@ -95,7 +104,5 @@ public class Controller {
         iPod.addSongToList("Yet to Come", "BTS", "Proof", "2:16", 8);
         iPod.addSongToList("Butter", "BTS", "Proof", "3:20", 9);
         iPod.addSongToList("Life Goes On", "BTS", "Proof", "2:37", 10);
-
-
     }
 }

@@ -32,6 +32,7 @@ public class IPod implements IIpod_simulator{
         return true;
     }
 
+
     @Override
     public boolean LockUnlockDevice(boolean actual_locked_state) {
         if(actual_locked_state) {
@@ -91,7 +92,6 @@ public class IPod implements IIpod_simulator{
 
     /**
      * Este metodo guarda una cancion en listado de favoritos
-     *
      * @param _song la cancion que se desea guardar
      * @throws Exception cuando la lista ya esta llena
      */
@@ -220,8 +220,7 @@ public class IPod implements IIpod_simulator{
 
     /**
      * Elimina una cancion de la lista de favoritas pero no del listado general
-     *
-     * @param index
+     * @param index indice de las canciones en favoritos
      * @throws Exception Cuando el indice esta fuera de rango
      */
     @Override

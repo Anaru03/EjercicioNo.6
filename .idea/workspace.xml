@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="últimos arreglos de las acciones del menuPrincipal">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cancion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cancion.java" afterDir="false" />
+    <list default="true" id="10b907ad-04a3-4b70-8bc2-7b4559354c2c" name="Changes" comment="Modificación del JavaDoc en las clases">
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IIpod_simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IIpod_simulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IPod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667675779260</updated>
       <workItem from="1667675780675" duration="837000" />
-      <workItem from="1667680953126" duration="18271000" />
+      <workItem from="1667680953126" duration="18728000" />
     </task>
     <task id="LOCAL-00001" summary="Desarrollo de las clases con sus métodos">
       <created>1667676552846</created>
@@ -140,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667698744358</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Modificación del JavaDoc en las clases">
+      <created>1667701294928</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667701294928</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +173,8 @@
     <MESSAGE value="Acciones de los case y el Menu" />
     <MESSAGE value="Configuraciones del menú mandando a llamar el UI" />
     <MESSAGE value="últimos arreglos de las acciones del menuPrincipal" />
-    <option name="LAST_COMMIT_MESSAGE" value="últimos arreglos de las acciones del menuPrincipal" />
+    <MESSAGE value="Modificación del JavaDoc en las clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificación del JavaDoc en las clases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
